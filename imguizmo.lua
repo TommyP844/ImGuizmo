@@ -1,15 +1,20 @@
 project "ImGuizmo"
-  kind "StaticLib"
-  language "C++"
-  location ""
-  cppdialect "C++20"
+    kind "StaticLib"
+    language "C++"
+    location ""
+    cppdialect "C++20"
+    architecture "x64"
 
-  files {
-    "ImGuizmo.h",
-    "ImGuizmo.cpp"
-  }
+    includedirs {
+        "../imgui"
+    }
 
-  -- visual studio filters
+    files {
+        "ImGuizmo.h",
+        "ImGuizmo.cpp"
+    }
+
+    -- visual studio filters
     filter "action:vs*"
         defines { "_CRT_SECURE_NO_WARNINGS" }      
     filter {"configurations:Debug"}

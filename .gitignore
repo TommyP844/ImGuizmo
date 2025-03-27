@@ -1,5 +1,8 @@
 build/
 .*/
+bin/
+obj/
+*.vcxproj
 *.vcxproj.user
 example/x64/
 example/x86/
