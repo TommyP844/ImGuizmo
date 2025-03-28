@@ -17,10 +17,5 @@ project "ImGuizmo"
     -- visual studio filters
     filter "action:vs*"
         defines { "_CRT_SECURE_NO_WARNINGS" }      
-    filter {"configurations:Debug"}
-        buildoptions {"/MDd"}
-
-    filter {"configurations:Release"}
-        buildoptions {"/DT"}
 
 
