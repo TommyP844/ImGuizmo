@@ -1,7 +1,6 @@
 project "ImGuizmo"
     kind "StaticLib"
     language "C++"
-    location ""
     cppdialect "C++20"
     architecture "x64"
 
